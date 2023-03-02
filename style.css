@@ -2,6 +2,7 @@
 
 :root {
   font-family: "Rubik";
+  color: #333333;
 }
 
 * {
@@ -19,7 +20,7 @@ body {
 }
 
 header {
-  padding: 36px 0;
+  padding: 16px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,9 +32,115 @@ header {
   gap: 16px;
 }
 
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 71px;
+  padding-top: 100px;
+}
+
+.hero-container article {
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-container > div {
+  width: 42%;
+  position: relative;
+}
+
+.hero-container > div img {
+  width: 100%;
+}
+
+.hero-container article > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dash {
+  width: 48px;
+  height: 2px;
+  background-color: #333333;
+}
+
+.hello-text {
+  font-family: "Ubuntu";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 39.07px;
+}
+
+.hero-container article h1 {
+  font-size: 74px;
+  line-height: 87.69px;
+  font-weight: 500;
+}
+
+.hero-container article h1 span {
+  font-weight: 700;
+}
+
+.hero-container article h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 47.4px;
+}
+
+.hero-container article > p {
+  font-size: 24px;
+  line-height: 28.44px;
+  font-weight: 400;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 31.84px;
+}
+
+.scroll-icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.social-empty-box {
+  width: 150px;
+}
+
+/* media query */
 @media screen and (max-width: 768px) {
   body {
     padding: 0 20px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-container > * {
+    width: 100% !important;
+  }
+
+  .social {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .scroll-icon-container,
+  .social-empty-box {
+    display: none;
   }
 }
 
@@ -53,5 +160,20 @@ header {
 
   .menu-container p {
     display: none;
+  }
+
+  .hero-container {
+    padding-top: 80px;
+  }
+
+  .hero-container article h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .hero-container article h2,
+  .hero-container article p {
+    font-size: 18px;
+    line-height: 21px;
   }
 }
