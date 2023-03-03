@@ -202,6 +202,51 @@ header {
   grid-row-end: 13;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 140px 0;
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 63.99px;
+}
+
+.contact-container > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-container > div > * {
+  width: 48%;
+}
+
+.contact-container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-container article > p {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 52px;
+  margin-top: 60px;
+}
+
+.contact-container article ul {
+  list-style: none;
+}
+
+.contact-container form {
+  min-height: 540px;
+  background-color: #333333;
+}
+
 /* media query */
 @media screen and (max-width: 768px) {
   body {
